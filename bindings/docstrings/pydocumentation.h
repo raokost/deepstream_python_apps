@@ -406,6 +406,7 @@ namespace pydsdoc
             constexpr const char* NVDS_OPTICAL_FLOW_META=R"pyds(metadata type to be set for optical flow)pyds";
             constexpr const char* NVDS_LATENCY_MEASUREMENT_META=R"pyds(metadata type to be set for latency measurement)pyds";
             constexpr const char* NVDSINFER_TENSOR_OUTPUT_META=R"pyds(metadata type of raw inference output attached by gst-nvinfer. Refer :class:`NvDsInferTensorMeta` for details.)pyds";
+	    constexpr const char* NVDS_USER_RIVA_META_GAZE=R"pyds(metadata type of raw inference output attached by gst-nvinfer. Refer :class:`NvDsGazeMetaData` for details.)pyds";
             constexpr const char* NVDSINFER_SEGMENTATION_META=R"pyds(metadata type of segmentation model output attached by gst-nvinfer. Refer :class:`NvDsInferSegmentationMeta` for details.)pyds";
             constexpr const char* NVDS_CROP_IMAGE_META=R"pyds(Specifies metadata type for JPEG-encoded object crops.See the deepstream-image-meta-test app for details.)pyds";
             constexpr const char* NVDS_TRACKER_PAST_FRAME_META=R"pyds(metadata type to be set for tracking previous frames)pyds";
