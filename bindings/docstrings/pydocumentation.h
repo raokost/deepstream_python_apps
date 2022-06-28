@@ -1445,6 +1445,14 @@ namespace pydsdoc
             constexpr const char* output_layers_info =R"pyds(Retrieve the :class:`NvDsInferLayerInfo` object of layer at index j.)pyds";
             constexpr const char* cast=R"pyds(cast given object/data to :class:`NvDsInferTensorMeta`, call pyds.NvDsInferTensorMeta.cast(data))pyds";
         }
+	    
+	namespace  NvDsGazeMetaDataDoc
+        {
+            constexpr const char* descr = R"pyds(NVDS_USER_RIVA_META_GAZE is the Meta Data Type) check 
+	        https://github.com/NVIDIA-AI-IOT/deepstream_tao_apps/blob/master/apps/tao_others/deepstream-gaze-app/ds_gaze_meta.h for more info";
+
+            constexpr const char* cast=R"pyds(cast given object/data to :class:`NvDsGazeMetaData`, call pyds.NvDsGazeMetaData.cast(data))pyds";
+        }
 
         namespace  NvDsInferSegmentationMetaDoc
         {
