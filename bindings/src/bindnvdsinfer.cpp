@@ -231,6 +231,37 @@ namespace pydeepstream {
                      },
                      py::return_value_policy::reference,
                      pydsdoc::NvInferDoc::NvDsInferTensorMetaDoc::cast);
+        
+        
+        py::class_<NvDsGazeMetaData>(m, "NvDsGazeMetaData",
+                                        pydsdoc::NvInferDoc::NvDsGazeMetaDataDoc::descr)
+                .def(py::init<>())
+                .def_readonly("gaze_params0", &NvDsInferTensorMeta::gaze_params0)
+                .def_readonly("gaze_params1", &NvDsInferTensorMeta::gaze_params1)
+                .def_readonly("gaze_params2", &NvDsInferTensorMeta::gaze_params2)
+                .def_readonly("gaze_params3", &NvDsInferTensorMeta::gaze_params3)
+                .def_readonly("gaze_params4", &NvDsInferTensorMeta::gaze_params4)
+                .def_readonly("left_start_x", &NvDsInferTensorMeta::left_start_x)
+                .def_readonly("left_start_y", &NvDsInferTensorMeta::left_start_y)
+                .def_readonly("left_end_x", &NvDsInferTensorMeta::left_end_x)
+                .def_readonly("left_end_y", &NvDsInferTensorMeta::left_end_y)
+                .def_readonly("right_start_x", &NvDsInferTensorMeta::right_start_x)
+                .def_readonly("right_start_y", &NvDsInferTensorMeta::right_start_y)
+                .def_readonly("right_end_x", &NvDsInferTensorMeta::right_end_x)
+                .def_readonly("right_end_y", &NvDsInferTensorMeta::right_end_y)
+                .def("cast",
+                     [](void *data) {
+                         return (NvDsGazeMetaData *) data;
+                     },
+                     py::return_value_policy::reference,
+                     pydsdoc::NvInferDoc::NvDsGazeMetaDataDoc::cast)
+
+                .def("cast",
+                     [](size_t data) {
+                         return (NvDsGazeMetaData *) data;
+                     },
+                     py::return_value_policy::reference,
+                     pydsdoc::NvInferDoc::NvDsGazeMetaDataDoc::cast);
 
 
         py::class_<NvDsInferSegmentationMeta>(m, "NvDsInferSegmentationMeta",
