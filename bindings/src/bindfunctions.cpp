@@ -514,6 +514,15 @@ namespace pydeepstream {
                   return (NvDsInferTensorMeta *) data;
               },
               py::return_value_policy::reference);
+	    
+	/**
+         * Type casting to @NvDsGazeMetaData
+         */
+        m.def("glist_get_nvds_gaze_meta_data",
+              [](void *data) {
+                  return (NvDsGazeMetaData *) data;
+              },
+              py::return_value_policy::reference);
 
         // Required for backward compatibility
         m.def("register_user_copyfunc",
