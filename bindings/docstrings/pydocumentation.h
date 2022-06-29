@@ -1448,7 +1448,7 @@ namespace pydsdoc
 	    
 	namespace  NvDsGazeMetaDataDoc
         {
-            constexpr const char* descr = R"For GazeMeta purposes";
+            constexpr const char* descr = R"pyds(For GazeMeta `NvDsInferLayerInfo` purposes)pyds";
             constexpr const char* cast = R"pyds(cast given object/data to :class:`NvDsGazeMetaData`, call pyds.NvDsGazeMetaData.cast(data))pyds";
         }
 
