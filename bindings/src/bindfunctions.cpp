@@ -746,6 +746,14 @@ namespace pydeepstream {
                   return info;
               },
               py::return_value_policy::reference);
+	    
+	m.def("gaze_params",
+              [](void *data) {
+                  auto *META = (NvDsGazeMetaData *) data;
+		  float* gaze = META->gaze_params;
+                  return gaze;
+              },
+              py::return_value_policy::reference);
 
         m.def("get_segmentation_masks",
               [](void *data) {
