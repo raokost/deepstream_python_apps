@@ -1449,7 +1449,7 @@ namespace pydsdoc
 	namespace  NvDsGazeMetaDataDoc
         {
             constexpr const char* descr = R"pyds(For GazeMeta `NvDsGazeMetaData` purposes)pyds";
-	    constexpr const char* gaze_param = R"pyds(For GazeMeta `NvDsGazeMetaData` purposes, gets the gaze parameters)pyds";
+	    constexpr const char* gaze_params = R"pyds(For GazeMeta `NvDsGazeMetaData` purposes, gets the gaze parameters)pyds";
             constexpr const char* cast = R"pyds(cast given object/data to :class:`NvDsGazeMetaData`, call pyds.NvDsGazeMetaData.cast(data))pyds";
         }
 
