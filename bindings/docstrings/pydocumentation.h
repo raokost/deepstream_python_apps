@@ -1448,10 +1448,8 @@ namespace pydsdoc
 	    
 	namespace  NvDsGazeMetaDataDoc
         {
-            constexpr const char* descr = R"pyds(NVDS_USER_RIVA_META_GAZE is the Meta Data Type) check 
-	        https://github.com/NVIDIA-AI-IOT/deepstream_tao_apps/blob/master/apps/tao_others/deepstream-gaze-app/ds_gaze_meta.h for more info";
-
-            constexpr const char* cast=R"pyds(cast given object/data to :class:`NvDsGazeMetaData`, call pyds.NvDsGazeMetaData.cast(data))pyds";
+            constexpr const char* descr = R"For GazeMeta purposes";
+            constexpr const char* cast = R"pyds(cast given object/data to :class:`NvDsGazeMetaData`, call pyds.NvDsGazeMetaData.cast(data))pyds";
         }
 
         namespace  NvDsInferSegmentationMetaDoc
