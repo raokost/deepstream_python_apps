@@ -245,12 +245,6 @@ namespace pydeepstream {
                 .def_readonly("right_start_y", &NvDsGazeMetaData::right_start_y)
                 .def_readonly("right_end_x", &NvDsGazeMetaData::right_end_x)
                 .def_readonly("right_end_y", &NvDsGazeMetaData::right_end_y)
-                .def("gaze_params",
-                     [](NvDsGazeMetaData &self) {
-                         return self.gaze_params;
-                     },
-                     py::return_value_policy::reference,
-                     pydsdoc::NvInferDoc::NvDsGazeMetaDataDoc::gaze_params)
                 .def("cast",
                      [](void *data) {
                          return (NvDsGazeMetaData *) data;
