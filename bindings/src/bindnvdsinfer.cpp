@@ -249,7 +249,7 @@ namespace pydeepstream {
                          return self.gaze_params;
                      },
                      py::return_value_policy::reference,
-                     pydsdoc::NvInferDoc::NvDsGazeMetaDataDoc::gaze_param)
+                     pydsdoc::NvInferDoc::NvDsGazeMetaDataDoc::gaze_params)
                 .def("cast",
                      [](void *data) {
                          return (NvDsGazeMetaData *) data;
