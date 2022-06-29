@@ -236,11 +236,6 @@ namespace pydeepstream {
         py::class_<NvDsGazeMetaData>(m, "NvDsGazeMetaData",
                                         pydsdoc::NvInferDoc::NvDsGazeMetaDataDoc::descr)
                 .def(py::init<>())
-                .def_readonly("gaze_params0", &NvDsGazeMetaData::gaze_params0)
-                .def_readonly("gaze_params1", &NvDsGazeMetaData::gaze_params1)
-                .def_readonly("gaze_params2", &NvDsGazeMetaData::gaze_params2)
-                .def_readonly("gaze_params3", &NvDsGazeMetaData::gaze_params3)
-                .def_readonly("gaze_params4", &NvDsGazeMetaData::gaze_params4)
                 .def_readonly("left_start_x", &NvDsGazeMetaData::left_start_x)
                 .def_readonly("left_start_y", &NvDsGazeMetaData::left_start_y)
                 .def_readonly("left_end_x", &NvDsGazeMetaData::left_end_x)
